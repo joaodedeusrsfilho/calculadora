@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="main">
+        <form action="" name="FormCalculator">
+            <input type="text" class="text maincolor" name="text1" value="" disabled>
+            <br>
+            <input type="button" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>
+            
+            <input type="button" class="num maincolor" name="botao7" value="7" onclick="displaynumero(botao7.value)">
+            <input type="button" class="num maincolor" name="botao8" value="8" onclick="displaynumero(botao8.value)">
+            <input type="button" class="num maincolor" name="botao9" value="9" onclick="displaynumero(botao9.value)">
+
+            <input type="button" class="num cinza" name="adicaobotao" value="+" onclick="displaynumero(adicaobotao.value)"><br>
+            
+            <input type="button" class="num maincolor" name="botao4" value="4" onclick="displaynumero(botao4.value)">
+            <input type="button" class="num maincolor" name="botao5" value="5" onclick="displaynumero(botao5.value)">
+            <input type="button" class="num maincolor" name="botao6" value="6" onclick="displaynumero(botao6.value)">
+            
+            
+            <input type="button" class="num vermelho" name="subtracaobotao" value="-" onclick="displaynumero(subtracaobotao.value)"><br>             
+
+            <input type="button" class="num maincolor" name="botao1" value="1" onclick="displaynumero(botao1.value)">
+            <input type="button" class="num maincolor" name="botao2" value="2" onclick="displaynumero(botao2.value)">
+            <input type="button" class="num maincolor" name="botao3" value="3" onclick="displaynumero(botao3.value)">
+            
+            
+            <input type="button" class="num verde" name="multiplicacaobotao" value="*" onclick="displaynumero(multiplicacaobotao.value)"><br>
+
+            <input type="button" class="num maincolor" name="botaoponto" value="." onclick="displaynumero(botaoponto.value)">
+            <input type="button" class="num maincolor" name="botaozero" value="0" onclick="displaynumero(botaozero.value)">
+            <input type="button" class="num maincolor" name="botaoigual" value="=" onclick="text1.value=eval(text1.value)">
+
+            <input type="button" class="num laranja" name="botaodivisao" value="/" onclick="displaynumero(botaodivisao.value)"><br>
+            <p style="color: white;">Desenvolvido por João de Deus</p>
+        </form>
+    </div>
+</body>
+
+</html>
